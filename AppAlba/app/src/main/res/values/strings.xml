@@ -1,0 +1,94 @@
+<resources>
+
+    <string-array name="Pregunta5">
+        <item>25</item>
+        <item>100</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="Pregunta6">
+        <item>150</item>
+        <item>10050</item>
+        <item>50</item>
+
+    </string-array>
+
+    <string name="app_name">App Alba</string>
+    <string name="etiquetaBienvenidaTest">Welcome to Alba\'s App</string>
+    <string name="tvOpciones">Choose an option</string>
+    <string name="buttonCalculadora">Calculator</string>
+    <string name="buttonParImpar">even / odd</string>
+    <string name="buttonNumeroPrimo">prime number</string>
+    <string name="btAcerca">about</string>
+    <string name="btAleatorio">random nº</string>
+    <string name="buttonSalir">Exit</string>
+    <string name="tvBienvenidaAleatorio">Welcome to random number!</string>
+    <string name="tvEscogeAleatorio">Choose min and max number</string>
+    <string name="tvUno">Numer 1:</string>
+    <string name="tvDos">Number 2:</string>
+    <string name="btDarAleatorio">Get number</string>
+    <string name="tvTuNumero">Your random number is:</string>
+    <string name="etNombreMain">Insert your name</string>
+    <string name="tvHola">Hello</string>
+    <string name="tvFoto">A picture of my dog :)</string>
+    <string name="btSalir">Back</string>
+    <string name="tvBienvenidaCalculadora">You arrive to calculator!</string>
+    <string name="btCalculadoraAgapaga">Calculator is off, touch for turn on</string>
+    <string name="btCalculadoraEncendida">Calculator on, tour for turn off</string>
+    <string name="tvCal1">Insert number 1:</string>
+    <string name="tvCal2">Insert number 2:</string>
+    <string name="btSuma">Sum</string>
+    <string name="btResta">Subtraction</string>
+    <string name="btMultiplicacion">Multiplicaton</string>
+    <string name="tvResultadoCalculadora">No operations done</string>
+    <string name="tvParImpar">You arrived to even or odd</string>
+    <string name="swParImparEncender">Touch for turn on or turn off</string>
+    <string name="tvPar">Insert number:</string>
+    <string name="btComprobar">check number</string>
+    <string name="tvComprobar">You\'ve never check the number</string>
+    <string name="btVolverPart">Welcome Screen</string>
+    <string name="tvPrimo">You arrived to prime number</string>
+    <string name="etBienvenidaTest">Welcome to test!</string>
+    <string name="swTodas">If you turn on, you must answer every question</string>
+    <string name="btBorrar">Delete</string>
+    <string name="tvPregunta3">3. Choose correct answers:</string>
+    <string name="cb3_1">Asturias is on Europe</string>
+    <string name="cb3_2">EEUU is on Europe</string>
+    <string name="cb3_3">France is on Europe</string>
+    <string name="tvPregunta4">4. Choose NOT correct answers</string>
+    <string name="cb4_1">A dog has 4 paws</string>
+    <string name="cb4_2">A spider has 4 legs</string>
+    <string name="cb4_3">A shark has 4 legs</string>
+    <string name="tvCadenaResultado">Your score is:</string>
+    <string name="btResultado">Score</string>
+    <string name="etVariosPalabra">Dog</string>
+    <string name="tvBienvenidaVarios">Hello! You \'ve arrived to divers</string>
+    <string name="tvTextoVarios">We are going to use intentions, insert the word you want to search in google</string>
+    <string name="btVariosGoogle">Search in Google</string>
+    <string name="tvTextoWeb">Write a page for open it</string>
+    <string name="btVariosPagina">open page</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="btCalculadoraPotencia">potency</string>
+    <string name="tvTextoMultimedia">Choose an option for play it</string>
+    <string name="cancion1">Song 1</string>
+    <string name="cancion2">Song 2</string>
+    <string name="cancion3">Song 3</string>
+    <string name="tvSonidoVarios">touch behind to play the sound</string>
+    <string name="btSonidoVarios">touch me</string>
+    <string name="tvCamara">Touch the buttons to use the recorder</string>
+    <string name="GrabaAudio">Recording audio</string>
+    <string name="AudioGrabado">Audio recordered</string>
+    <string name="audioPlay">Playing audio</string>
+    <string name="insertAudio">First you should record an audio</string>
+    <string name="noPagina">You are not write a page</string>
+    <string name="noPalabra">You are not write a word</string>
+    <string name="escogerCancion">You should choose a song</string>
+    <string name="escogerVideo">You should choose a video</string>
+    <string name="valorVacio">Something its empty</string>
+    <string name="numeroMayor">Number 2 should be bigger than 1</string>
+    <string name="encenderPrograma">First you should turn on the program</string>
+    <string name="divCero">You cannot divided by 0</string>
+    <string name="contestarPreguntas">First you should answer all questions</string>
+    <string name="respuestaBorrar">Choose an answer to delete</string>
+    <string name="varios">Misc</string>
+    <string name="acerca">About</string>
+</resources>

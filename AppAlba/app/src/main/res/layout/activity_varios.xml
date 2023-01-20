@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_varios">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvBienvenidaVarios"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_margin="10dp"
+                android:background="#9000BCD4"
+                android:text="@string/tvBienvenidaVarios"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTextoVarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#7C9C27B0"
+                android:text="@string/tvTextoVarios"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/etVariosPalabra"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="@string/etVariosPalabra"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btVariosGoogle"
+                android:layout_width="389dp"
+                android:layout_height="59dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#6FD8E6"
+                android:onClick="buscarGoogle"
+                android:text="@string/btVariosGoogle"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTextoWeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#CE95D8"
+                android:text="@string/tvTextoWeb"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etVariosPagina"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="metacritic"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btVariosPagina"
+                android:layout_width="391dp"
+                android:layout_height="62dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#6FD8E6"
+                android:onClick="abrirPagina"
+                android:text="@string/btVariosPagina"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTextoMultimedia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#7C9C27B0"
+                android:onClick="salir"
+                android:text="@string/tvTextoMultimedia"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioGroup
+                android:id="@+id/rgMusica"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rbC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#82C3CC"
+                    android:text="@string/cancion1" />
+
+                <RadioButton
+                    android:id="@+id/rbC2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#7A6EB7C1"
+                    android:text="@string/cancion2" />
+
+                <RadioButton
+                    android:id="@+id/rbC3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#B9EBF2"
+                    android:text="@string/cancion3" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ibPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="reproducir"
+                    app:srcCompat="@android:drawable/ic_media_play" />
+
+                <ImageButton
+                    android:id="@+id/ibPause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="parar"
+                    app:srcCompat="@android:drawable/ic_media_pause" />
+
+                <ImageButton
+                    android:id="@+id/ibStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1"
+                    android:onClick="stop"
+                    app:srcCompat="@android:drawable/presence_offline" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPulsaVarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#7C9C27B0"
+                android:text="@string/tvSonidoVarios"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btSonidoVarios"
+                android:layout_width="389dp"
+                android:layout_height="59dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#6FD8E6"
+                android:onClick="reproducirSonido"
+                android:text="@string/btSonidoVarios"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#7C9C27B0"
+                android:text="Videos!"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioGroup
+                android:id="@+id/rgVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rbV1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#82C3CC"
+                    android:text="Londres" />
+
+                <RadioButton
+                    android:id="@+id/rbV2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#7A6EB7C1"
+                    android:text="Edimburgo" />
+
+                <RadioButton
+                    android:id="@+id/rbV3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#B9EBF2"
+                    android:text="Nueva York" />
+            </RadioGroup>
+
+            <VideoView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp" />
+
+            <Button
+                android:id="@+id/btPlay"
+                android:layout_width="389dp"
+                android:layout_height="59dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#6FD8E6"
+                android:onClick="repoducirVideo"
+                android:text="PLAY"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCamara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#7C9C27B0"
+                android:text="@string/tvCamara"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ibGrabar"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_weight="50"
+                    android:onClick="grabarAudio"
+                    app:srcCompat="@android:drawable/presence_audio_away" />
+
+                <ImageButton
+                    android:id="@+id/ibReproducir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:onClick="reproducirAudio"
+                    app:srcCompat="@android:drawable/ic_media_play" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btVolverVarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:backgroundTint="#CE95D8"
+                android:onClick="salir"
+                android:text="@string/btVolverPart" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView8"
+                android:name="com.example.appalba.Fragment_publicidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_publicidad" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLyout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/etBienvenidaTest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:background="#8CCCB1"
+                android:padding="8dp"
+                android:text="@string/etBienvenidaTest"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                app:srcCompat="@drawable/imagentest" />
+
+            <Switch
+                android:id="@+id/swTodas"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="10dp"
+                android:minHeight="48dp"
+                android:text="@string/swTodas"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvPregunta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="1. 5 x 5 :"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rb1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="30" />
+
+                <RadioButton
+                    android:id="@+id/rb1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="25" />
+
+                <RadioButton
+                    android:id="@+id/rb1_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="10" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btLimpiarP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#8BCBB0"
+                    android:onClick="borrarP1"
+                    android:text="@string/btBorrar"
+                    android:textColor="#0B0A0A" />
+
+                <ImageView
+                    android:id="@+id/iv1Bien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/bien" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPregunta2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="2. 30 - 10 :"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rb2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="40" />
+
+                <RadioButton
+                    android:id="@+id/rb2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="20" />
+
+                <RadioButton
+                    android:id="@+id/rb2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="5" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btLimpiarP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#8BCBB0"
+                    android:onClick="borrarP2"
+                    android:text="@string/btBorrar"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/iv2Bien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/bien" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPregunta3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/tvPregunta3"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cb3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/cb3_1" />
+
+            <CheckBox
+                android:id="@+id/cb3_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/cb3_2" />
+
+            <CheckBox
+                android:id="@+id/cb3_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/cb3_3" />
+
+            <ImageView
+                android:id="@+id/iv3Bien"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/bien" />
+
+            <TextView
+                android:id="@+id/tvPregunta4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/tvPregunta4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cb4_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/cb4_1" />
+
+            <CheckBox
+                android:id="@+id/cb4_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/cb4_2" />
+
+            <CheckBox
+                android:id="@+id/cb4_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/cb4_3" />
+
+            <ImageView
+                android:id="@+id/iv4Bien"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/bien" />
+
+            <TextView
+                android:id="@+id/tvPregunta5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="5. 50 x 2:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:entries="@array/Pregunta5" />
+
+            <TextView
+                android:id="@+id/tvPregunta6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="6. 100 + 50:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:entries="@array/Pregunta6" />
+            <TextView
+                android:id="@+id/tvCadenaResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/tvCadenaResultado"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:hint="0"
+                android:textColor="#050505"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btAcerca"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="33"
+                    android:backgroundTint="#8BCBB0"
+                    android:backgroundTintMode="add"
+                    android:onClick="borrarRespuestas"
+                    android:text="@string/btBorrar"
+                    android:textColor="#040303"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btResolver"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="33"
+                    android:backgroundTint="#8BCBB0"
+                    android:backgroundTintMode="add"
+                    android:onClick="comprobarResultado"
+                    android:text="@string/btResultado"
+                    android:textColor="#040303"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btVolver"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="33"
+                    android:backgroundTint="#8BCBB0"
+                    android:backgroundTintMode="add"
+                    android:onClick="volverPrincipal"
+                    android:text="@string/btSalir"
+                    android:textColor="#040303"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView7"
+                android:name="com.example.appalba.Fragment_publicidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_publicidad" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

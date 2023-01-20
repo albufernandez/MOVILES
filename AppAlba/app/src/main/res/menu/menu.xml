@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/miVarios"
+        android:title="@string/varios" />
+    <item
+        android:id="@+id/miAcercaDe"
+        android:title="@string/acerca" />
+    <item
+        android:id="@+id/miSalir"
+        android:icon="@android:drawable/ic_delete"
+        android:title="Salir"
+        app:showAsAction="always" />
+</menu>

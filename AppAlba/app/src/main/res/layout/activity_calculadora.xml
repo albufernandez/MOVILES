@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="suma"
+    tools:context=".Calculadora">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvBienvenida"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#F87AA6"
+                android:padding="10dp"
+                android:text="@string/tvBienvenidaCalculadora"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgCalculadora"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/calculadora" />
+
+            <ToggleButton
+                android:id="@+id/tbEncendida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#00AFF1"
+                android:checked="false"
+                android:text="@string/btCalculadoraAgapaga"
+                android:textColor="#FFFFFF"
+                android:textOff="@string/btCalculadoraAgapaga"
+                android:textOn="@string/btCalculadoraEncendida" />
+
+            <TextView
+                android:id="@+id/textoValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvCal1"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextValor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="10"
+                android:inputType="numberSigned"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textoValor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvCal2"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextValor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="10"
+                android:inputType="numberSigned"
+                android:textAlignment="center" />
+
+            <TableLayout
+                android:id="@+id/tlOperaciones"
+                android:layout_width="match_parent"
+                android:layout_height="123dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:id="@+id/buttonSuma"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="33"
+                        android:backgroundTint="#F77AA5"
+                        android:onClick="suma"
+                        android:text="@string/btSuma" />
+
+                    <Button
+                        android:id="@+id/buttonResta"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="33"
+                        android:backgroundTint="#F77AA5"
+                        android:onClick="resta"
+                        android:text="@string/btResta" />
+
+                    <Button
+                        android:id="@+id/buttonPotencia"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="33"
+                        android:backgroundTint="#F77AA5"
+                        android:onClick="portencia"
+                        android:text="@string/btCalculadoraPotencia" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:id="@+id/buttonMultiplicacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="50"
+                        android:backgroundTint="#F57AA3"
+                        android:onClick="multiplicacion"
+                        android:text="@string/btMultiplicacion" />
+
+                    <Button
+                        android:id="@+id/buttonDivision"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="50"
+                        android:backgroundTint="#F67AA4"
+                        android:onClick="division"
+                        android:text="Division" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textoResultado"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:text="@string/tvResultadoCalculadora"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imagenVolver"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#F77AA5"
+                android:contentDescription="@string/btVolverPart"
+                android:onClick="paginaPrincipal"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView5"
+                android:name="com.example.appalba.Fragment_publicidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_publicidad" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
